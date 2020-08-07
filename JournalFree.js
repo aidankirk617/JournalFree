@@ -1,3 +1,7 @@
+//Journal Free
+
+//Variables
+
 var speechRecognition = window.webkitSpeechRecognition
 
 var recognition = new speechRecognition()
@@ -10,10 +14,29 @@ var content = ''
 
 recognition.continuous = true
 
-//recognition started
+//Recognition Started
 
 recognition.onstart = function () {
   instructions.text("Voice Recognition is on")
+}
+
+recognition.onspeechend = function () {
+  instructions.text("No Activity")
+}
+
+recognition.onerror = function () {
+  instructions.text("Try Again")
+}
+
+recognition.onresult = function (event) {
+  var current = event.resultIndex;
+
+  var transcript = event.results[current][0].transcript
+
+  content += transcript
+
+  textbox.val(content)
+
 }
 
 $("#start-btn").click(function (event) {
@@ -21,5 +44,11 @@ $("#start-btn").click(function (event) {
     content += ''
   }
 
+//Initialize
+
   recognition.start()
+})
+
+textbox.on('input', function (){
+  content = $(this).val()
 })
