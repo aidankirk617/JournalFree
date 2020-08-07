@@ -9,7 +9,7 @@ catch(e) {
 }
 
 
-var noteTextarea = $('#note-textarea');
+var textbox = $('#note-textarea');
 var instructions = $('#recording-instructions');
 var notesList = $('ul#notes');
 
@@ -37,7 +37,7 @@ recognition.onresult = function(event) {
 
   if(!mobileRepeatBug) {
     noteContent += transcript;
-    noteTextarea.val(noteContent);
+    textbox.val(noteContent);
   }
 };
 
@@ -69,17 +69,17 @@ $('#start-btn').on('click', function(e) {
 });
 
 
-$('#pause-record-btn').on('click', function(e) {
+$('#record-btn').on('click', function(e) {
   recognition.stop();
   instructions.text('Voice recognition paused.');
 });
 
 // Sync the text inside the text area with the noteContent variable.
-noteTextarea.on('input', function() {
+textbox.on('input', function() {
   noteContent = $(this).val();
 })
 
-$('#save-note-btn').on('click', function(e) {
+$('#save-btn').on('click', function(e) {
   recognition.stop();
 
   if(!noteContent.length) {
@@ -93,7 +93,7 @@ $('#save-note-btn').on('click', function(e) {
     // Reset variables and update UI.
     noteContent = '';
     renderNotes(getAllNotes());
-    noteTextarea.val('');
+    textbox.val('');
     instructions.text('Note saved successfully.');
   }
 
