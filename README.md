@@ -2,7 +2,7 @@
 <br />
 <p align="center">
     <!-- <a href="https://github.com/aidankirk617/CataBot"> -->
-    <img src="images/logo1.jpg" alt="Logo" width="400" height="400">
+    <img src="images/bg.jpg" alt="Logo" width="800" height="400">
   </a>
 
   <h3 align="center">JournalFree</h3>
@@ -59,31 +59,11 @@ JournalFree is a __
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Javascript](https://www.javascript.com)
+* [JQuery](https://jquery.com)
+* [Google Speech API](https://cloud.google.com/speech-to-text/)
 
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Clone the repo
-```sh
-git clone https://github.com/aidankirk617/CataBot.git
-```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
