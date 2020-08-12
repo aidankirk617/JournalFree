@@ -1,20 +1,17 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Identity by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JournalFree Ver 0.1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+</head>
+    <body>
+        <div class="container">
 
 			<div id="wrapper">
+          <h1 class="text-center mt-5">
+            JournalFree
+          </h1>
 
 					<section id="main">
 						<header>
@@ -26,28 +23,24 @@
 							<button id="start-btn" title="Start Recording">Start Recognition</button>
 							<button id="pause-btn" title="Pause Recording">Pause Recognition</button>
 						</header>
-						
+
 						<footer>
 							<ul class="icons">
+            <div class="app">
+                <h3>Bring Your Thoughts to Life</h3>
+                <div class="form-group">
+                    <textarea id="note-textarea" placeholder="Click start recognition to begin" rows="6" class="form-control"></textarea>
+                </div>
+                <button id="start-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-btn" title="Pause Recording">Pause Recognition</button>
+                <button id="save-btn" title="Save Note">Save Note</button>
+                <p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.</p>
+                <div></div>
+                <h3>What is JournalFree?</h3>
+                <p>JournalFree is a personal webapp for writing down your thoughts, through your voice.
 
-							</ul>
-						</footer>
-					</section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
 
-					<footer id="footer">
-						<ul class="copyright">
-							Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+    </body>
 </html>
