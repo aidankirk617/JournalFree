@@ -55,7 +55,15 @@
 
 <!--[![Produc Name Screen Shot][product-screenshot]](https://example.com) -->
 
-JournalFree is a __
+JournalFree is a journal app that writes your thoughts for you.
+
+More specifically, your voice. Using the Google Speech API, JournalFree will listen and write down anything you say. Ultimately storing it using JQuery.
+
+In today’s day and age where journaling is not only considered an important mental health exercise, but popular, it’s hard to pick a good tool to go about it. Many people are simply better speakers than they are writers. I’m sure we all know someone who could vent for hours without stopping, but stop dead in their tracks when faced with an essay deadline. Sometimes, talking it out just feels so much better than typing in front of a screen. One is healthy and part of human nature, the latter isn’t. If journaling itself is a health exercise, why not make it healthier?
+
+Just simply enable your microphone, hit the start button, and start venting. You can even pause recognition in case you’re interrupted, or need to stop and think. Copy paste your thoughts onto a document style of choice, and you’re all set. 
+
+You didn’t even need to touch the keyboard.
 
 ### Built With
 
